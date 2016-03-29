@@ -126,18 +126,21 @@
 	float: right;
 	margin-top: 5px;
 }
-.menu table{
+.menu ul{
 	width: 872px;
 	line-height: 70px;
 	text-align: center;
 }
-.menu table tbody tr td a,.menu table tbody tr td a:link,.menu table tbody tr td a:hover,.menu table tbody tr td a:active{
+.menu li{
+	float: left;
+}
+.menu a,.menu a:link,.menu  a:hover,.menu a:active{
 	padding:0px 15px;
 	font-size: 16px;
 	color: hsl(0, 0%, 60%);
 	font-weight: bold;
 }
-.menu table tbody tr td .menu_txt ,.menu table tbody tr td .menu_txt a:visited {
+.menu .menu_txt ,.menu .menu_txt a:visited {
 	color: hsl(86, 72%, 43%);
 }
 .none{
@@ -150,10 +153,21 @@
 	margin: 0px;
 	padding: 0px;
 }
-#title2,#title3,#title4,#title5,#title6,#title7{
+.none li{
+	width: 147px;
+	float: none;
+}
+
+/*#title2,#title3,#title4,#title5,#title6,#title7{
 	display: inline-block;
 }
 #title2:hover+.none,#title3:hover+.none,#title4:hover+.none,#title5:hover+.none,#title6:hover+.none,#title7:hover+.none,.none:hover{
+	display: block;
+}*/
+.menu a[id^="title"]{
+	display: inline-block;
+}
+.menu a[id^="title"]:hover+.none,.none:hover{
 	display: block;
 }
 .none ul li{
