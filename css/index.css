@@ -31,9 +31,11 @@ table{
 body{
 	font: 12px/1.3 Tahoma,'Microsoft Yahei','Simsun';
 	width: 100%;
+	color: #333;
 }
-a:link,a:visited,a:hover,a:active{
+a:link,a:visited{
 	text-decoration: none;
+	color: #333;
 }
 li{
 	list-style: none;
@@ -54,7 +56,7 @@ em{
 	height: 14px;
 }
 /*图像占位符*/
-div[class$="img"]
+div[class$="_img"]
 {
 	background-color: black;
 	color:white;
@@ -64,12 +66,6 @@ div[class$="img"]
 	width:310px;
 	height:79px;
 	line-height:79px;
-	font-size:30px;
-}
-.hot_img{
-	width:400px;
-	height:260px;
-	line-height:260px;
 	font-size:30px;
 }
 .user_img{
@@ -90,6 +86,22 @@ div[class$="img"]
 	font-size: 20px;
 	line-height: 100px;
 }
+.title5_img{
+	width: 110px;
+	height: 80px;
+	font-size: 10px;
+	line-height: 80px;
+	margin-right: 20px;
+	float: left;
+}
+.title6_img{
+	width: 120px;
+	height: 80px;
+	font-size: 10px;
+	line-height: 80px;
+	float: left;
+	margin-right: 20px;
+}
 /*头部下方动画CSS*/
 #mainanimation{
 	height: 421px;
@@ -106,20 +118,121 @@ div[class$="img"]
 	left: 50%;
 }
 /*正文内容CSS-通用*/
-.indexdaohang{
-	height: 34px;
-	width: 100%;
-	padding-bottom: 20px;
-}
 .clear{
 	margin:0px;
 	padding: 0px;
 	padding-top: 10px;
 }
-/*正文内容CSS-网站导航*/
+/*title2、4、6通用*/
+.title_index{/*标题下面内容框*/
+	padding-top: 20px;
+	height: 500px;
+}
+.index_left{/*标题下面内容框左边的内容*/
+	background-image: url("../image/twill.png");
+	background-repeat: repeat;
+	width: 400px;
+	height: 391px;
+	float: left;
+	padding: 15px;
+}
+.index_left_img{/*标题下面内容框左边的图片*/
+	width: 400px;
+	height: 260px;
+}
+.hot_img{/*标题下面内容框左边的图片*/
+	width:400px;
+	height:260px;
+	line-height:260px;
+	font-size:30px;
+}
+.index_left_img em{/*图片左上角“热点推荐”*/
+	background-color: rgb(242,86,24);
+	width: 48px;
+	height: 20px;
+	line-height: 20px;
+	color:#ffffff;
+	padding: 3px;
+	left: 0px;
+	top: 0px;
+	margin-left: -10px;
+	margin-top: -250px;
+}
+.link{/*标题下面内容框左边的图片下面的超链接*/ 
+	font-size: 16px;
+	line-height: 26px;
+}
+.link a:hover{/*鼠标悬停在图片下面的超链接*/
+	color: rgb(121,188,31);
+	text-decoration: underline;
+}
+.index_left_meta{/*超链接下面的内容*/
+	margin-top: 10px; 
+	height: 20px;
+	line-height: 20px;
+	font-size: 15px;
+	color: #afafaf;
+}
+.meta_class{/*超链接下面的五角星图标*/
+	background-image: url("../image/meta-class.png");
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	padding-left: 26px;
+}
+.meta_date{/*超链接下面的时钟图标*/
+	background-image: url("../image/meta-date.png");
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	padding-left: 26px;
+}
+.meta_replay{/*超链接下面的回复图标*/
+	background-image: url("../image/meta-replay.png");
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	padding-left: 26px;
+}
+
+.index_middle{/*标题下面内容框中间的内容*/
+	float: left;
+	height: 500px;
+	width: 400px;
+	padding: 15px 15px 5px 15px;
+	margin-left: 25px;
+}
+.middle_word{/*中间内容的文字*/
+	background-image: url("../image/dot.gif");
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	padding-left: 10px;
+	margin: 0;
+	
+}
+.middle_word a {/*中间内容文字超链接*/
+	font-size: 16px;
+	line-height: 26px;
+}
+.middle_word em{/*中间内容文字右边的日期*/
+	float: right;
+	margin-top: 3px;
+}
+.index_right{/*标题下面内容框右边的内容*/
+	width: 270px;
+	border-left: 1px solid #eee;
+	height: 467px;
+	float:left;
+	padding-top: 20px;
+	margin-top: -20px;
+	padding-left: 20px;
+}
+/*title1：导航栏*/
 .title1{
-	margin: 10px auto;
+	margin: 20px auto;
 	width: 1200px;
+}
+.title1_title{
+	height: 34px;
+	width: 100%;
+	padding-bottom: 20px;
 }
 .indextupian{
 	height: 116px;
@@ -144,7 +257,6 @@ div[class$="img"]
 	border:1px #f3f3f3 solid;
 	background-image: url("../image/twill.png");
 	background-repeat: repeat;
-	color: #555;
 	font-size: 16px;
 }
 .indextupian a i{
@@ -214,86 +326,17 @@ div[class$="img"]
 .indextupian a:hover .i_tupian9,.indextupian a:active .i_tupian9{
 	background-position: -350px -160px;
 }
-
-/*正文内容CSS-热点新闻*/
+/*title2:热点新闻*/
 .title2{
-	margin: 60px auto;
+	margin: 50px auto;
 	width: 1200px;
+	height: 570px;
 }
-.index_hr{
+.title2_title{
+	height: 34px;
+	width: 100%;
+	padding-bottom: 20px;
 	border-bottom: 1px solid #eee;
-}
-.index_column{
-	padding-top: 20px;
-	height: 550px;
-}
-.index_column_left{
-	background-image: url("../image/twill.png");
-	background-repeat: repeat;
-	width: 400px;
-	height: 391px;
-	float: left;
-	padding: 15px;
-}
-.index_left_img{
-	width: 400px;
-	height: 260px;
-}
-.index_column_left em{
-	background-color: rgb(242,86,24);
-	width: 48px;
-	height: 20px;
-	line-height: 20px;
-	color:#ffffff;
-	padding: 3px;
-	left: 0px;
-	top: 0px;
-	margin-left: -10px;
-	margin-top: -250px;
-}
-.index_left_text{
-	margin-left:10%; 
-	font-size: 16px;
-	line-height: 26px;
-}
-.index_left_text a:link,.index_left_text a:visited{
-	color: #555;
-}
-.index_left_text a:hover,.index_left_text a:active{
-	color: rgb(121,188,31);
-}
-.index_left_meta{
-	margin-top: 10px;
-	margin-left:10%; 
-	height: 20px;
-	line-height: 20px;
-	font-size: 15px;
-	color: #afafaf;
-}
-.meta_class{
-	background-image: url("../image/meta-class.png");
-	background-repeat: no-repeat;
-	background-position: 0 50%;
-	padding-left: 26px;
-}
-.meta_date{
-	background-image: url("../image/meta-date.png");
-	background-repeat: no-repeat;
-	background-position: 0 50%;
-	padding-left: 26px;
-}
-.meta_replay{
-	background-image: url("../image/meta-replay.png");
-	background-repeat: no-repeat;
-	background-position: 0 50%;
-	padding-left: 26px;
-}
-.index_column_middle{
-	float: left;
-	height: 500px;
-	width: 400px;
-	padding: 15px;
-	margin-left: 25px;
 }
 .index_middle_first{
 	border-bottom:2px dashed #afafaf;
@@ -303,7 +346,10 @@ div[class$="img"]
 	font-size: 18px;
 	font-weight: 800;
 	line-height: 34px;
-	color: red;
+	color: red !important;
+}
+.red_word:hover{
+	text-decoration: underline;
 }
 .red_word_description{
 	font-size: 14px;
@@ -319,31 +365,8 @@ div[class$="img"]
 	line-height: normal;
 
 }
-.middle_word{
-	background-image: url("../image/dot.gif");
-	background-repeat: no-repeat;
-	background-position: 0 50%;
-	padding-left: 10px;
-	margin: 0;
-	
-}
-.middle_word a {
-	font-size: 16px;
-	line-height: 26px;
-}
-.middle_word em{
-	float: right;
-	margin-top: 3px;
-}
-.index_column_right{
-	width: 270px;
-	border-left: 1px solid #eee;
-	height: 467px;
-	float:left;
-	padding-top: 20px;
-	margin-top: -20px;
-	padding-left: 20px;
-}
+
+
 .index_right_top{
 	height: 50px;
 	line-height: 40px;
@@ -387,9 +410,6 @@ div[class$="img"]
 	height: 40px;
 	margin-top: -10px;
 }
-.bottom_index_title a {
-    color: rgb(85,85,85);
-}
 .bottom_index_title a:hover {
     color: rgb(121,188,31);
     text-decoration:underline;
@@ -399,8 +419,9 @@ div[class$="img"]
 	margin-top: 10px;
 	font-size: 15px;
 }
+/*title3:新游资讯*/
 .title3{
-	margin: 60px auto;
+	margin: 30px auto;
 	width: 1200px;
 }
 .title3_title{
@@ -408,6 +429,7 @@ div[class$="img"]
 	height: 160px;
 	width: 180px;
 	float: left;
+	clear: both;
 }
 .title3_title_ico{
 	width: 60px;
@@ -448,7 +470,7 @@ div[class$="img"]
 	display: flex;
 
 }
-.title3_list .list1,.title3_list .list2,.title3_list .list3,.title3_list .list4{
+.title3_list1{
 	margin-left: 15px;
 	height: 160px;
 	width: 230px;
@@ -478,9 +500,17 @@ div[class$="img"]
 .list_tag:hover{
 	text-decoration: underline;
 }
+/*title4:黑色沙漠*/
 .title4{
-	margin:60px auto;
+	margin:10px auto;
 	width: 1200px;
+	height: 570px;
+}
+.title4_title{
+	height: 34px;
+	width: 100%;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eee;
 }
 .right_top{
 	width: 270px;
@@ -531,4 +561,124 @@ div[class^="middle_index"] a:hover{
 .on{
 	color: rgb(121,188,31);
 	border-bottom: 5px solid  rgb(121,188,31) !important;
+}
+/*title5：黑沙重点*/
+.title5{
+	margin: 30px auto;
+	width: 1200px;
+}
+.title5_title{
+	background-color: rgb(249,190,3);
+	height: 160px;
+	width: 180px;
+	float: left;
+	clear: both;
+}
+.title5_title_ico{
+	width: 60px;
+	height: 60px;
+	background-image: url("../image/index_global.png");
+	background-position: -41px -203px;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	display: block;
+}
+.title5_title_index{
+	text-align: center;
+	color: white;
+	width: 60px;
+	font-size: 15px;
+	margin:0 auto;
+	display: block;
+}
+.title5_title a:hover,.title5_title a:active
+{
+	text-decoration: underline;
+	color:white;
+}
+.title5_title em{
+	border-width: 10px;
+	border-color: transparent rgb(248,248,248) transparent transparent;
+	border-style: dashed solid dashed dashed;
+	height: 0;
+	width: 0;
+	margin:0;
+	padding:0;
+	float: right;
+	margin-top: -35px;
+}
+.title5_list{
+	width: 1000px;
+	height: 160px;
+	display: flex;
+	background-color: rgb(246,246,246);
+
+}
+.title5_list1{
+	width: 330px;
+	height: 160px;
+	float: left;
+	margin-left: 20px;
+}
+.title5_list1_index{
+	height: 80px;
+	width: 310px;
+	margin: 0px;
+}
+.title5_list1_title_index{
+	width: 220px;
+	height: 80px;
+}
+.title5_list1_title_index a{
+	font-size: 20px;
+}
+.title5_list1_title_index a:hover{
+	color: rgb(121,188,31);
+	text-decoration: underline;
+}
+.title5_list1_index li{
+	margin: 5px 0px 10px 0px;
+	font-size: 15px;
+	line-height: 15px;
+}
+.title5_list1_index em{
+	float: right;
+	margin: 0px;
+}
+.title5_list1_index a:hover{
+	text-decoration: underline;
+}
+/*title6:剑灵资讯*/
+.title6{
+	margin:20px auto;
+	width: 1200px;
+	height: 570px;
+}
+.title6_title{
+	height: 34px;
+	width: 100%;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eee;
+}
+.title6_top{
+	width: 260px;
+	height: 40px;
+	float: left;
+	border-bottom: 2px solid rgb(121,188,31);
+	line-height: 40px;
+	font-size: 20px;
+	cursor: pointer;
+	padding-bottom: 20px;
+}
+.title6_right_bottom{
+	width: 100%;
+	height: 320px;
+}
+.title6_right_bottom li{
+	width: 270px;
+	height: 80px;
+}
+.title6_index a:hover{
+	color:  rgb(121,188,31);
+	text-decoration: underline;
 }
