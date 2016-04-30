@@ -133,12 +133,13 @@
 }
 .menu li{
 	float: left;
+
 }
-.menu a,.menu a:link,.menu  a:hover,.menu a:active{
+.menu ul a,.menu a:link,.menu a:hover,.menu a:active{
 	padding:0px 15px;
 	font-size: 16px;
-	color: hsl(0, 0%, 60%) !important;
 	font-weight: bold;
+	color: rgba(255,251,240,.7) 
 }
 .menu .menu_txt ,.menu .menu_txt a:visited {
 	color: hsl(86, 72%, 43%) !important;
@@ -162,16 +163,37 @@
 }
 .menu a[id^="title"]:hover+.none,.none:hover{
 	display: block;
+	
 }
 .none ul li{
-	background-color: hsl(0, 0%, 100%);
+	background-color: rgba(255,251,240,1);
 	height: 50px;
 	line-height: 50px;
 	
 }
 .none ul li a,.none ul li a:link,.none ul li a:visited,.none ul li a:hover,.none ul li a:active{
-	font-size: 12px !important;
+	font-size: 14px !important;
+	color: #000;
+	text-align: center;
+}
+.none ul li a{
+	animation:head_ani_out 1s;
+   	white-space: nowrap;
+   	animation-fill-mode: forwards;
 }
 .none ul li:hover,.none ul li:active{
 	background-color: hsl(0, 0%, 96%);
+}
+.none ul li:hover a{
+	animation:head_ani_in 1s;
+   	white-space: nowrap;
+   	animation-fill-mode: forwards;
+}
+@keyframes head_ani_in{
+	from {font-size: 14px;}
+	to {font-size: 18px;}
+}
+@keyframes head_ani_out{
+	0% {font-size: 18px;}
+	100% {font-size: 14px;}
 }

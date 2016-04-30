@@ -1,0 +1,7 @@
+#开启重写模式
+RewriteEngine On
+#设置根目录
+RewriteBase /html
+#设置重写规则
+RewriteRule index.html index.php
+RewriteRule ^form-(\d+)-(\d+).html$ index.php?part=$1&title=$2
