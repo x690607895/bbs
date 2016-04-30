@@ -45,10 +45,9 @@ body
    font: 12px/1.3 Tahoma,'Microsoft Yahei','Simsun';
 
    width: 100%;
+   margin: 0;
 
    color: #333;
-
-   margin:0px;
 }
 
 a:link,
@@ -174,26 +173,33 @@ div[class$='_img']
    width: 220px;
    height: 160px;
 }
-.ani_big_img{
+.ani_big_img
+{
+   font-size: 30px;
    line-height: 420px;
+
+   float: left;
+
    width: 660px;
    height: 420px;
-   font-size: 30px;
-   float: left;
 }
-.ani_sm_img{
+.ani_sm_img
+{
+   font-size: 20px;
    line-height: 210px;
+
+   float: left;
+
    width: 330px;
    height: 210px;
-   font-size: 20px;
-   float: left;
 }
 /*头部下方动画CSS*/
 #mainanimation
 {
+   overflow: hidden;
+
    width: 1903px;
    height: 420px;
-   overflow: hidden;
 
    background-color: #000;
 }
@@ -209,104 +215,166 @@ div[class$='_img']
    background-image: url('../image/loading.gif');
    background-repeat: no-repeat;
 }
-.ani{
+.ani
+{
    width: 4952px;
    height: 420px;
+
    animation: main_ani 30s;
    animation-delay: 2s;
-   animation-direction:alternate;
-   animation-iteration-count:infinite;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
 }
-@keyframes main_ani{/*定义咕哝*/
-   0% {margin-left: 350px;}
-   33% {margin-left: -850px;}
-   66% {margin-left: -2100px;}
-   100%{margin-left: -3350px;}
+.ani:hover{
+   animation-play-state: paused;/*动画停止*/
 }
-.element{
+@keyframes main_ani
+{
+   /*定义动画*/
+   0%
+   {
+      margin-left: 350px;
+   }
+   33%
+   {
+      margin-left: -850px;
+   }
+   66%
+   {
+      margin-left: -2100px;
+   }
+   100%
+   {
+      margin-left: -3350px;
+   }
+}
+.element
+{
    float: left;
 }
-.big_element{
+.big_element
+{
    float: left;
    overflow: hidden;
+
    width: 660px;
    height: 420px;
 }
-.small_element{
+.small_element
+{
    float: left;
 }
-.ani:first-child{
+.ani:first-child
+{
    margin-left: 350px;
 }
-.ani_big_txt{
+.ani_big_txt
+{
+   position: absolute;
+
    height: 80px;
    margin-top: 361px;
-   position: absolute;
 }
-.ani_big_txt h2{
-   line-height: 55px;
+.ani_big_txt h2
+{
    font-size: 26px;
+   line-height: 55px;
+
+   transition: transform .35s;
+   transition-delay: .15s;
+
    color: #fff;
-   transition: transform 0.35s;
-   transition-delay:0.15s;
 }
-.ani_big_txt p{
-   color: #fff;
+.ani_big_txt p
+{
    font-size: 16px;
-   transition: opacity 0.05s transform 0.25s;
    line-height: 30px;
+
+   transition: opacity .05s transform .25s;
+
    opacity: 0;
+   color: #fff;
 }
-.big_element:hover h2,.big_element:hover p{
+.big_element:hover h2,
+.big_element:hover p
+{
+   transition: opacity .35s transform .35s;/*定义动画执行时间*/
    transform: translateY(-60px);/*定义动画Y轴向上走60px*/
-   transition: opacity 0.35s transform 0.35s;/*定义动画执行时间*/
 }
-.big_element:hover p{
-   transition-delay:0.35s;/*定义动画等待时间*/
-   opacity: 0.7;
+.big_element:hover p
+{
+   transition-delay: .35s;/*定义动画等待时间*/
+
+   opacity: .7;
 }
-.small_element{
+.small_element
+{
    width: 572px;
    height: 421px;
 }
-.sm_item{
+.sm_item
+{
+   float: left;
+   overflow: hidden;
+
    width: 286px;
    height: 210px;
-   overflow: hidden;
-   float: left;
 }
-.ani_sm_txt{
+.ani_sm_txt
+{
+   position: absolute;
+
+   width: 286px;
    height: 90px;
    margin-top: 170px;
-   position: absolute;
-   width: 286px;
 }
-.ani_sm_txt h2{
-   line-height: 45px;
+.ani_sm_txt h2
+{
    font-size: 20px;
-   transition: transform 0.35s;
-   transition-delay:0.15s;
+   line-height: 45px;
+
    width: 286px;
+
+   transition: transform .35s;
+   transition-delay: .15s;
+
    opacity: 0;
 }
-.ani_sm_txt p{
+.ani_sm_txt p
+{
    font-size: 16px;
-   transition: opacity 0.05s transform 0.25s;
    line-height: 30px;
+
+   transition: opacity .05s transform .25s;
+
    opacity: 0;
 }
-.sm_item:hover h2,.sm_item:hover p{
+.sm_item:hover h2,
+.sm_item:hover p
+{
+   transition: opacity .35s transform .35s;/*定义动画执行时间*/
    transform: translateY(-40px);/*定义动画Y轴向上走60px*/
-   transition: opacity 0.35s transform 0.35s;/*定义动画执行时间*/
-   animation: sm_txt_color 0.35s ;/*设置动画的名字和时间*/
+   animation: sm_txt_color .35s ;/*设置动画的名字和时间*/
    animation-iteration-count: 1;/*设置播放时间*/
-   animation-fill-mode:forwards;/*设置播放完成后的状态*/
+
+   animation-fill-mode: forwards;/*设置播放完成后的状态*/
 }
-@keyframes sm_txt_color{/*定义动画字体颜色从黑-白*/
-   0% {color: #555;}
-   100%{color: #fff;}
+@keyframes sm_txt_color
+{
+   /*定义动画字体颜色从黑-白*/
+   0%
+   {
+      color: #555;
+   }
+   100%
+   {
+      color: #fff;
+   }
 }
-.sm_item:hover p,.sm_item:hover h2,.ani_sm_txt:hover{
+.sm_item:hover p,
+.sm_item:hover h2,
+.ani_sm_txt:hover
+{
    opacity: 1;
 }
 /*正文内容CSS-通用*/
@@ -1276,7 +1344,7 @@ div[class^='middle_index'] a:hover
    height: 90px;
    margin-top: -90px;
 
-   background-color: rgba(255,251,240,0.7);
+   background-color: rgba(255,251,240,.7);
 }
 .t8_big_txt p
 {
@@ -1323,7 +1391,7 @@ div[class^='middle_index'] a:hover
    height: 30px;
    margin-top: -30px;
 
-   background-color: rgba(255,251,240,0.7);
+   background-color: rgba(255,251,240,.7);
 }
 .t8_smallpic:hover a:hover span,
 .t8_smallpic:hover a:hover p

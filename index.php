@@ -8,13 +8,12 @@
 </head>
 <body>
 	<div id="head" style="height: 135px;">
-		<iframe src="./head.html" frameborder="0" width="100%" height="135px"></iframe>
-		<!--#include file=./head.html-->
+		<?php include './head.html'; ?>
 	</div>
 	<div id="mainanimation">
 		<div class="loading" style="z-index: -1"></div>
 		<div style="width: 1903px; overflow: hidden;position: relative;">
-			<div class="ani" style="z-index: 10">
+			<div class="ani" style="z-index: 10" id="ani">
 			<div class="element">
 				<div class="big_element">
 					<!--<img src="#" alt="#" class="ani_big_img">-->
@@ -435,12 +434,21 @@
 					<script>
 					function autoshishi(){
 						var index_shishi=$("#t2");
+						var index_shishi_4=$("#t2 li:nth-child(4)");
+						var index_shishi_last=$("#t2 li:last");
 						index_shishi.animate({marginTop:"-120px"},1000,function(){
+						index_shishi_4.animate({opacity:"1"},1000);
 						index_shishi.css({marginTop:"0"}).find("li:first").appendTo(index_shishi);
+						index_shishi_last.css({opacity:"0"});
 						});
 					}
 						$(document).ready(function(){
 							var shishi=setInterval("autoshishi()",5000);
+							$("#t2").hover(function(){
+								clearInterval(shishi);
+							},function(){
+								shishi=setInterval("autoshishi()",5000);
+							})
 						});
 					</script>
 					<div class="index_right_top">实时更新</div>
@@ -516,7 +524,7 @@
 									<div class="bottom_index_index">index</div>
 								</div>
 							</li>
-							<li>
+							<li style="opacity: 0;">
 								<div class="user">
 									<a href="#">
 										<!--<img src="#" alt="#" class="user_img" />
@@ -538,7 +546,7 @@
 									<div class="bottom_index_index">index</div>
 								</div>
 							</li>
-							<li>
+							<li style="opacity: 0;">
 								<div class="user">
 									<a href="#">
 										<!--<img src="#" alt="#" class="user_img" />
