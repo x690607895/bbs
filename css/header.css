@@ -1,5 +1,49 @@
 ﻿@charset "utf-8";
 /*头部CSS*/
+.c1
+{
+   zoom: 1;
+}
+.tophd
+{
+   height: 39px;
+   padding: 2px 0 4px;
+
+   transition: all .4s;
+
+   border-bottom: 1px solid hsl(0, 0%, 93%);
+   background-color: hsl(0, 0%, 96%);
+}
+*
+{
+   word-wrap: break-word;
+}
+body
+{
+   font: 12px/1.3 Tahoma,'Microsoft Yahei','Simsun';
+
+   width: 100%;
+   margin: 0;
+
+   color: #333;
+}
+li
+{
+   list-style: none;
+}
+a:link,
+a:visited
+{
+   text-decoration: none;
+
+   color: #333;
+}
+
+.wp
+{
+   width: 1200px;
+   margin: 0 auto;
+}
 .c1 table{
 	background-color: hsl(0, 0%, 93%);
 	height: 32px;
@@ -153,6 +197,7 @@
 .none ul{
 	margin: 0px;
 	padding: 0px;
+	width: 200px;
 }
 .none li{
 	width: 147px;
@@ -177,7 +222,7 @@
 	text-align: center;
 }
 .none ul li a{
-	animation:head_ani_out 1s;
+	animation:head_ani_out 0.5s;
    	white-space: nowrap;
    	animation-fill-mode: forwards;
 }
@@ -185,7 +230,7 @@
 	background-color: hsl(0, 0%, 96%);
 }
 .none ul li:hover a{
-	animation:head_ani_in 1s;
+	animation:head_ani_in 0.5s;
    	white-space: nowrap;
    	animation-fill-mode: forwards;
 }

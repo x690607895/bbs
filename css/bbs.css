@@ -1,0 +1,157 @@
+@charset 'utf-8';
+@import url(header.css);
+.content a:hover{
+	text-decoration: underline;
+}
+.clear
+{
+   margin: 0;
+   padding: 0;
+}
+em
+{
+   font-style: normal;
+
+   display: inline;
+   float: left;
+
+   height: 14px;
+   margin: 18px 0 0 10px;
+
+   color: hsl(0, 0%, 60%);
+}
+/*图像占位符*/
+div[class$='_img']
+{
+   text-align: center;
+
+   color: white;
+   background-color: black;
+}
+.logo_img
+{
+   font-size: 30px;
+   line-height: 79px;
+
+   width: 310px;
+   height: 79px;
+}
+.top1_img{
+	font-size: 16px;
+	line-height: 50px;
+	width: 33.3%;
+	height: 50px;
+	float: left;
+}
+.ani_img{
+	width: 1200px;
+	height: 350px;
+	float: left;
+	line-height: 350px;
+	font-size: 30px;
+}
+.news_index_img{
+	width: 300px;
+	height: 250px;
+	line-height: 250px;
+	font-size: 30px;
+	margin-top: 10px;
+}
+.index_img{
+	width: 100px;
+	height: 100px;
+	font-size: 12px;
+	line-height: 50px;
+	float: left;
+}
+/*面包屑导航条*/
+.daohang ol{
+	font-size: 16px;
+	padding-top: 20px;
+}
+/*头部动画*/
+.topani{
+	width: initial;
+	height: 415px;
+}
+.top-ani{
+	height: 350px;
+	margin-bottom: 20px;
+}
+.top-img{
+	height: 50px;
+}
+/*正文*/
+.content{
+	width: 1200px;
+	display: flex;
+	margin-top: 20px;
+}
+.con_left{
+	width: 860px;
+	height: 1000px;
+	float: left;
+	padding: 20px;
+}
+.con_right{
+	width: 280px;
+	background-color: #000;
+	height: 1000px;
+}
+.title{
+	border-bottom: 2px dashed #555;
+	padding-bottom: 5px;
+	color: #000;
+}
+.index{
+	width: 100%;
+	margin-top: 10px;
+}
+.index ul {
+	width: 870px
+}
+.index li{
+	width: 24%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	float: left;
+	height: 100px;
+}
+.title span{
+	display: inline-block !important;
+	float: right;
+	margin-top: -25px;
+	cursor: pointer;
+}
+.index_index a{
+	color: #79bc1f;
+	font-weight: 500;
+	font-size: 14px;
+	margin-left: 5px;
+}
+.banzhu{
+    display: inline-block;
+    margin-top: 25px;
+    float: left;
+    margin-left: -43px;
+}
+.tiezi{
+	margin-left: -43px;
+	margin-top: 5px;
+}
+.li3{
+	width: 33.3% !important;
+}
+.li3 a{
+	margin-left: -45px;
+}
+.li3 .index_index{
+	margin-top: -15px;
+}
+.li3 .index_index em{
+	margin-top: 35px;
+}
+.li3 .index_index .tiezi{
+	margin-top: 5px;
+	margin-left: 10px;
+}

@@ -7,9 +7,9 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
-	<div id="head" style="height: 135px;">
+	<header style="height: 135px;">
 		<?php include './head.html'; ?>
-	</div>
+	</header>
 	<div id="mainanimation">
 		<div class="loading" style="z-index: -1"></div>
 		<div style="width: 1903px; overflow: hidden;position: relative;">
@@ -243,57 +243,57 @@
 					<tbody>
 						<tr>
 							<td>
-								<a href="#" title="title1">
+								<a href="./form-21-1.html" title="聊天吹水">
 									<I class="i_tupian1"></I>
-									<span>title1</span>
+									<span>聊天吹水</span>
 								</a>
 							</td>
 							<td>
-								<a href="#" title="title2">
+								<a href="./form-23-1.html" title="妹纸自爆">
 									<I class="i_tupian2"></I>
-									<span>title2</span>
+									<span>妹纸自爆</span>
 								</a>
 							</td>
 							<td>
-								<a href="#" title="title3">
+								<a href="./form-22-1.html" title="原创CG">
 									<I class="i_tupian3"></I>
-									<span>title3</span>
+									<span>原创CG</span>
 								</a>
 							</td>
 							<td>
-								<a href="#" title="title4">
+								<a href="./form-41-1.html" title="黑沙捏脸">
 									<I class="i_tupian4"></I>
-									<span>title4</span>
+									<span>黑沙捏脸</span>
 								</a>
 							</td>
 							<td>
-								<a href="#" title="title5">
+								<a href="./form-51-1.html" title="黑沙汉化">
 									<I class="i_tupian5"></I>
-									<span>title5</span>
+									<span>黑沙汉化</span>
 								</a>
 							</td>
 							<td>
-								<a href="#" title="title6">
+								<a href="./form-42-1.html" title="剑灵极模">
 									<I class="i_tupian6"></I>
-									<span>title6</span>
+									<span>剑灵极模</span>
 								</a>
 							</td>
 							<td>
-								<a href="#" title="title7">
+								<a href="./form-52-1.html" title="剑灵捏脸">
 									<I class="i_tupian7"></I>
-									<span>title7</span>
+									<span>剑灵捏脸</span>
 								</a>
 							</td>
 							<td>
-								<a href="#" title="title8">
+								<a href="./form-53-1.html" title="天刀捏脸">
 									<I class="i_tupian8"></I>
-									<span>title8</span>
+									<span>天刀捏脸</span>
 								</a>
 							</td>
 							<td>
-								<a href="#" title="title9">
+								<a href="./form-33-1.html" title="冒险岛2">
 									<I class="i_tupian9"></I>
-									<span>title9</span>
+									<span>冒险岛2</span>
 								</a>
 							</td>
 
