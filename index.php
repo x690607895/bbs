@@ -3,7 +3,7 @@
 <head>
 	<title>title</title>
 	<link rel="stylesheet" type="text/css" href="./css/index.css">
-	<script src="./js/jquery.min.js"></script>
+	<script src="./js/jquery-2.2.3.min.js"></script>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
